@@ -8,6 +8,13 @@ import SubHeading from '../../components/SubHeading/SubHeading';
 
 const Container = styled.div`
   background-color: var(--color-black);
+  padding: 4rem 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
 `
 
 const Left = styled.div``
@@ -47,12 +54,12 @@ const RightImage = styled.img`
 `
 
 const Header = () => (
-  <Container className='app__wrapper section__padding' id='home'>
+  <Container id='home'>
     <Left>
       <SubHeading title='Chase the new flavor' />
       <Header1>The Key to Fine Dining</Header1>
       <LeftText className='p__opensans'>Zit telluz zed zebenrit vivamiz molezitle. Condiemnum voluptat morbi faciliz quam scelerique sapien. Et, penebalius aliqpiam amet telilurs</LeftText>
-      <LeftButton>Explore Our Menu</LeftButton>
+      <LeftButton type='button'>Explore Our Menu</LeftButton>
     </Left>
 
     <Right>

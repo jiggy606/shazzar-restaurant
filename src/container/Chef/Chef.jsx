@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Chef.css';
+import { images, data } from '../../constants';
 
 const Chef = () => (
   <div>

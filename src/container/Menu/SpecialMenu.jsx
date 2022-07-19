@@ -25,23 +25,93 @@ const Menu = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `
 
-const Left = styled.div``
+const Left = styled.div`
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+`
 
-const LeftText = styled.p``
+const LeftText = styled.p`
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
 
-const LeftMenuItems = styled.div``
+  @media screen and (max-width: 650px) {
+    font-size: 35px;
+    line-height: 48.5px;
+  }
+`
 
-const Middle = styled.div``
+const LeftMenuItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+`
 
-const MiddleImg = styled.img``
+const Middle = styled.div`
+  width: 410px;
+  margin: 0 2rem;
 
-const Right = styled.div``
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 
-const RightText = styled.p``
+  @media screen and (max-width: 1150px) {
+    margin: 3rem 0;
+  }
 
-const RightMenuItems = styled.div``
+  @media screen and (max-width: 2000px) {
+    width: 650px;
+  }
+`
+
+const MiddleImg = styled.img`
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 2000px) {
+    height: 920px;
+  }
+`
+
+const Right = styled.div`
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+`
+
+const RightText = styled.p`
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+
+  @media screen and (max-width: 650px) {
+    font-size: 35px;
+    line-height: 48.5px;
+  }
+`
+
+const RightMenuItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+`
 
 const ButtonContainer = styled.div`
   margin-top: 15px;
@@ -74,7 +144,7 @@ const SpecialMenu = () => (
 
       <Right>
         <RightText> {/* app__specialMenu-heading */}
-          Wine and Beer
+          Cocktails
         </RightText>
         <RightMenuItems> {/* app__specialMenu-items */}
           {data.cocktails.map((cocktail, index) => (

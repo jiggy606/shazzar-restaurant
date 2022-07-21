@@ -2,9 +2,9 @@ import React from 'react';
 
 import { images, data } from '../../constants';
 
-import styled from 'styled-components';
-
 import { SubHeading, MenuItem } from '../../components';
+
+import styled from 'styled-components';
 
 const Container = styled.div`
   flex-direction: column;
